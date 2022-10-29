@@ -118,3 +118,46 @@ body {
     font-size: 20px;
 }
 
+.footer {
+    width: 100%;
+    background-color: #f59d1b;
+  }
+  .footer .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  
+  .footer .grupo-1 .boxx p {
+    color: #0c0b0be8;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .footer .grupo-1 .redes a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+  }
+  .footer .grupo-1 .redes a:hover {
+    color: aqua;
+  }
+  .footer .grupo-2 {
+    background-color: rgb(235, 241, 241);
+    padding: 15px 10px;
+    text-align: center;
+    color: #0c0b0be8;
+  }
+  .footer .grupo-2 small {
+    font-size: 15px;
+  }
