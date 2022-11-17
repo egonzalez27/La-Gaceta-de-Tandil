@@ -455,58 +455,6 @@ body {
 }
 
 .footer {
-    width: 100%;
-    background-color: #c0392b;
-  }
-  .footer .grupo-1 {
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    padding: 45px 0px;
-  }
-  .footer .grupo-1 .boxx img {
-    max-height: 100px;
-    display: flex;
-    width: 50%;
-  }
-
-  .footer .grupo-1 .boxx p {
-    color: #0c0b0be8;
-    margin-bottom: 10px;
-    
-  }
-  .footer .grupo-1 .redes a {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: #0d2033;
-    text-align: center;
-    transition: all 300ms ease;
-  }
-  .footer .grupo-1 .redes a:hover {
-    color: aqua;
-  }
-  .footer .grupo-2 {
-    background-color: #f59d1b;
-    padding: 15px 10px;
-    text-align: center;
-    color: #0c0b0be8;
-  }
-  .footer .grupo-2 small {
-    font-size: 15px;
-  }
-
-
-
-
-.footer {
     
     background-color: #bdc3c7;
     font-family:  Arial, sans-serif, 'Gill Sans', 'Gill Sans MT';
