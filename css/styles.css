@@ -7,6 +7,7 @@ body {
     scrollbar-width: none;
     background-color: #f39c12;
     font-family: 'Lato', sans-serif;
+    margin: auto;
 }
 
 
@@ -15,7 +16,6 @@ body {
 .containerPublicityUp {
     display: block;
     width: 100%;
-    background-color: #f39c12;
 }
 
 .publicityUp {
@@ -39,37 +39,52 @@ body {
 .headContainer {
     display: flex;
     width: 90%;
-    background-color: #f39c12;
     margin-right: auto;
     margin-left: auto;
 }
 
+
 .containerHeadPublicity {
     display: flex;
     position: relative;
-    width: 28%;
+    width: 20%;
+    margin-right: 5px;
 }
 
 .headPublicity img {
     display: flex;
-    max-height: 200px;
     width: 100%;
 }
+
 
 .containerHeadLogo {
     display: flex;
     flex-direction: row;
-    width: 74%;
-
+    width: 45%;
+    background-color: #e67e2240;
 }
 
-.headLogo img {
-    max-height: 200px;
-    display: flex;
+.headLogo {
     width: 100%;
 }
 
+.headLogo img {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
 
+.containerRadioPubli {
+    display: flex;
+    width: 20%;
+    background-color: #e67e2280;
+}
+
+.headRadioPubli {
+    display: flex;
+    justify-content: end;
+}
 
 
 
@@ -78,51 +93,62 @@ body {
 
 .containerMenu {
     display: flex;
-    position: relative;
     width: 100%;
-    height: 100vh;
-    max-height: 50px;
     margin: 10px 0;
+    font-size: 1.9vw;
     font-weight: normal;
     text-transform: uppercase;
-    font-family: sans-serif;
     background-color: #c0392b;
+    font-family: 'Calibri', 'Trebuchet MS';
 }
 
 .inicioMenu {
     position: relative;
-    display: inline-block;
 }
 
 .menuBTN {
     background-color: #d35400;
+    width: 100%;
     color: beige;
-    padding: 3px;
     border: none;
     cursor: pointer;
+    align-items: center;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+}
+
+.menuBTN img {
+    width: 100%;
+    margin-top: 4%;
 }
 
 .menuContent {
+    width: 35vw;
     display: none;
+    position: absolute;
     margin-right: auto;
     background-color: #d35400;
-    min-width: 160px;
+    max-width: 400px;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
 }
 
 .menuContent a {
-    color: black;
+    color: #ecf0f1;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
+
+
 .menuContent a:hover {
-    background-color: #d35400;
+    background-color: #c0392b;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
 }
 
 .inicioMenu:hover .menuBTN {
     background-color: #c0392b;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+    transform: scale(1.05);
 }
 
 .inicioMenu:hover .menuContent{
@@ -133,179 +159,106 @@ body {
 
 
 
-/* //Anterior Menú
-.inicioMenu ul {
+
+
+
+
+
+.containerRadio {
     display: flex;
-    height: 100%;
-    list-style: none;
-    font-size: 2vw;
-    padding: 0 0;
-    margin: 0;
-    position: sticky;
-    left: 0;
-    align-items: center;
-}
-
-.active {
-    background-color: #d35400;
-}
-
-.inicioMenu li{
-    float: left;
-    padding: 1%;
-
-
-}
-
-
-
-.inicioMenu li a{
-    display: block;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-decoration: none;
-}
-
-.inicioMenu li:hover {
-    color: rgb(255, 255, 255);
-}
-
-
-
-.inicioMenu ul li:hover {
-    background-color: #d35400;
-}
-
-
-.inicioMenu ul li:hover a {
-    color: rgb(255, 255, 255);
-}
-
-
- */
-
-
-
-
-
-.containerMainNews {
     width: 90%;
-    max-height: 450px;
+    position: relative;
+}
+
+.radioMenu {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: min-content;
+    margin-left: auto;
+}
+
+.radioItem {
+    width: 20vw;
+    height: auto;
+}
+
+
+
+
+
+
+
+.containerAllMainNews {
+    width: 90%;
     display: flex;
     flex-wrap: nowrap;
     margin-right: auto;
     margin-left: auto;
 }
 
-.mainNews{
+.containerMainNews{
     display: flex;
-    align-items: center;
+    flex-wrap: nowrap;
+    max-height: 510px;
     margin-right: 5px;
     width: 80%;
-    background: #d3540060;
+    border: 1px solid #e67e22;
+    background: #ecf0f1;
+    align-items: center;
+}
+
+.mainNews {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .containerImageMainNews {
-    display: flex;
-    width: 65%;
-    height: 100%;
-    position: relative;
-    margin: 0;
+    width: 80%;
+    padding: 0.5%;
 }
 
-.imageMainNews img {
+.containerImageMainNews img {
     width: 100%;
+    align-items: flex-end;
     object-fit:contain;
     transition: 2s;
     height: 100%;
 }
 
-/* .direcciones{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 20px;
-} 
-
-.direcciones a {
-    color: #fff;
-    display: inline-block;
-    padding: 20px;
-    text-decoration: none;
-}
-
-.direcciones a:hover {
-    background: #f59d1b70;
-    transition: .5s;
-}
-
-.barras {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-
-.barra {
-    cursor:pointer;
-    height: 4px;
-    width: 25px;
-    margin: 0 2px;
-    background: #ecebeb;
-    display: inline-block;
-    margin-left: 3px;
-}
-
-.active {
-    background: #f59d1b;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 2s;
-}
-
-
-@keyframes fade {
-    from {opacity: .4;}
-    to{opacity:1;}
-}
-
-*/
 
 
 .containerTextMainNews {
     display: flex;
-    width: 45%;
-    height: auto;
-    max-height: 450px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 50%;
+    padding: 1%;
     flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .titleMainNews {
     width: 100%;
-    margin-bottom: auto;
+    margin-bottom: 4%;
     text-align: center;
-    font-size: 2.5vw;
-    font-family: Verdana;
+    font-weight: 400;
+    font-size: 3vw;
+    color: #34495e;
 }
 
 
 .textMainNews {  
     width: 100%;
-    padding: 0 5px;
-    margin-top: auto;
-    font-size: 1.9vw;
+    padding: 0 15px;
+    margin-top: 4%;
+    font-weight: 300;
+    font-size: 1.5vw;
     text-align: center;
+    color: #2c3e50;
 }
+
+
+
 
 
 
@@ -343,18 +296,15 @@ body {
 .containerBarPublicity {
     display: block;
     width: 100%;
-    background-color: #f39c12;
 }
 
 .barPublicity {
-    position: absolute;
     display: flex;
     width: 90%;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: auto;
     margin-left: auto;
-    position: relative;
 }
 
 .barPublicity img{
@@ -368,54 +318,59 @@ body {
 .containerAllSecundaryNews {
     display: flex;
     width: 90%;
-    position: relative;
     flex-direction: row;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 10px;
-    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .containerSecundaryNews {
     display: flex;
     width: 80%;
     margin-right: 5px;
+    max-height: 770px;
 }
 
 .secundaryNews {
     margin: 0px 2px 0px 2px;
-    background: #d3540060;
-    padding: 5px;
+    background: #ecf0f1;
+    padding: 7px 7px 0 7px;
     width:35%;
+    border: 1px solid #e67e22;
 }
 
 .containerImageSecundaryNews {
     width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .containerImageSecundaryNews img {
-    max-width: 250px;
+    max-width: 300px;
     width: 100%;
     height: 100%;
-    
 }
 
-.containerTextSecundaryNews {  
-    position: relative;
-  }
+
 
 
 
 .titleSecundaryNews {
     text-align: center;
-    font-family: Verdana;
+    padding: 0 10px;
+    font-weight: 400;
     font-size: 2.5vw;
+    color: #2c3e50;
 }
 
 
 .textSecundaryNews {  
     text-align: center;
-    font-size: 1.9vw;
+    padding: 0 15px;
+    font-weight: 300;
+    font-size: 1.5vw;
+    color: #34495e;
 }
 
 
@@ -446,49 +401,143 @@ body {
 
 
 .containerAllOtherNews {
-    background: #d3540060;
+    background: #ecf0f1;
     display: flex;
     width: 90%;
     height: 50%;
-    position: relative;
     padding-right: 10px;
     padding-left: 10px;
     margin-right: auto;
     margin-left: auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 1px solid #e67e22;
 }
 
-.otherNews {
+.containerOtherNewsTitle {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    position: relative;
 }
 
-.superiorBarOtherNotice {
+.superiorBarOtherNews {
     width: 100%;
+    padding: 0 1.5%;
     float: left;
-    font-size: 2.7vw;
+    font-size: 2.6vw;
+    color: #2c3e50;
+    border-bottom: 1.5px solid #e67e22;
+    margin-bottom: 15px;
 }
 
 .containerOtherNews {
     display: flex;
-    padding: 5px;
-    width:33%;
+    padding: 0 2%;
+    width:33.3%;
     height: auto;
 }
 
 .titleOtherNews1 {
-    font-weight: 600;
+    padding: 0 1%;
+    text-align: center;
+    font-weight: 400;
     font-size: 2.5vw;
+    color: #2c3e50;
 }
 
 .textOtherNews1 {
+    padding: 0 2%;
+    text-align: center;
     width: 100%;
-    font-size: 1.9vw;
+    font-weight: 300;
+    font-size: 1.5vw;
+    color: #34495e;
 }
 
+.footer {
+    
+    background-color: #bdc3c7;
+    font-family:  Arial, sans-serif, 'Gill Sans', 'Gill Sans MT';
+    border-top: 2px solid #2980b9;
+  }
+
+  .containerFooterFirst {
+    width: 90%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .grupo-1 {
+    padding: 5px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+
+  .boxx {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .boxx img {
+    display: flex;
+    width: 100%;
+  }
+
+  .boxx h3 {
+    font-size: 2.1vw;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: #2c3e50;
+  }
+
+  .boxx p {
+    font-size: 2vw;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 6%;
+    margin-bottom: 5%;
+  }
+
+  .redes {
+    display: block;
+  }
+
+  .redes a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ecf0f1;
+    background-color: #2c3e50;
+    text-align: center;
+    transition: all 250ms ease;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .fa {
+    width: 4vw;
+    height: 4vw;
+    line-height: 4vw;
+    font-size: 2.5vw;
+  }
+  .redes a:hover {
+    color: #3498db;
+    transform: scale(1.1);
+    box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
+  }
 
 
+
+  .footer .grupo-2 {
+    background-color: #2c3e50;
+    padding: 1.5% 10px;
+    text-align: center;
+    color: #2980b9;
+  }
+  .footer .grupo-2 small {
+    font-size: 2vw;
+  }
 
 
