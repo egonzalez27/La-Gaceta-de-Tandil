@@ -522,10 +522,19 @@ body {
     line-height: 4vw;
     font-size: 2.5vw;
   }
-  .redes a:hover {
-    color: #3498db;
-    transform: scale(1.1);
-    box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
+
+  .facebook:hover{
+    background: blue;
+  }
+
+ .instagram:hover{
+    background: linear-gradient(to bottom, rgb(183, 4, 219), rgb(255, 0, 200), rgb(255, 230, 1));
+  }
+  .youtube:hover{
+    background: red;
+  }
+  .twitter:hover{
+    background: rgb(0, 191, 255);
   }
 
 
@@ -541,3 +550,17 @@ body {
   }
 
 
+
+
+/********************************************************************************
+                    INICIO TEST LOGIN Y REGISTER
+********************************************************************************/
+
+.ocultar{
+    display: none;
+}
+
+
+/********************************************************************************
+                     FIN TEST LOGIN Y REGISTER
+********************************************************************************/

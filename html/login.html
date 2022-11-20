@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/test.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="left-panel">
+        <a href="./login.html" class="close-session" id="log">Ingresar</a>
+        <button class="close-session ocultar" id="close-session">Salir</button>
+    </div>
+    <main>
+        <div class="container-form-login">
+            <div class="container-logo-form-login">
+                <h1>Welcome</h1>
+                <h2 class="tittle-welcome">La Gaceta Tandil</h2>
+                <img class="logo-login" src="../images/laGacetaLogoMain.svg" alt="Logo Tortas tía emilia">
+            </div>
+            <div id="form-login">
+                <form class="form-login" action="">
+                    <h3 class="title-login">Login</h3>
+                    <label class="container-input-log">
+                        <ion-icon class="icon-form" name="person"></ion-icon>
+                        <input placeholder="Username" type="text" class="input-form" id="username" required>
+                    </label>
+                    <label class="container-input-log">
+                        <ion-icon class="icon-form" name="lock-closed"></ion-icon>
+                        <input placeholder="Password" type="password" class="input-form" id="password" required>
+                    </label>
+                    <a href="./register.html" class="link">Register</a>
+                    <a href="#" class="link">Forgot your password?</a>
+                    <input type="submit" value="Log-in" class="btn-on" id="button">
+                </form>
+            </div>
+            <h2 class="ocultar" id="logInOn"></h2>
+        </div>
+    </main>
+    <script src="../js/main.js"></script>
+    <script src="../js/login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
