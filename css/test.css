@@ -42,11 +42,6 @@
     margin-bottom: 30px;
 }
 
-.container-input-log{
-    display: flex;
-    justify-content: center;
-}
-
 .icon-form {
     font-size: 20px;
     color: #d35400;
@@ -115,7 +110,6 @@ form .link {
 
 form label {
     display: flex;
-    justify-content: center;
     margin: 15px;
 }
 
@@ -192,6 +186,7 @@ form label input::placeholder {
 /*Texto de validación incorrecto*/
 .validation-incorrect {
     color: #ff0000;/*Cambia el color del texto*/
+    border: 2px solid red;
 }
 /*Botones del captcha con validación correcta*/
 .btn-captcha-off {

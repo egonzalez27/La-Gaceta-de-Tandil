@@ -22,18 +22,35 @@ BTN_SUBMIT.addEventListener("click", (e) => {
         /*Si está vacío el form nuestra un alert*/
         alert("Debe completar los campos obligatorios ( * ) para poder enviar el formulario.");
     }else{
-        if (PASSWORD_FORM.value === RE_PASSWORD_FORM.value){
-            /*Creamos un objeto que vamos a cargar en el localstorage*/
-            registerUser();
-            alert("Gracias por registrarse. " + `Usuario: ${USER_FORM.value} Password: ${PASSWORD_FORM.value}`);
-            FORM.submit();
+        if(verifyUserExistence()){
+            alert("El usuario ya existe, por favor elija otro.");
+            USER_FORM.value = "";
         }else{
-            alert("Las Passwords no coinciden, por favor vuelva a ingresar ambas passwords");
-            PASSWORD_FORM.value = "";
-            RE_PASSWORD_FORM.value = "";
+            if (PASSWORD_FORM.value === RE_PASSWORD_FORM.value){
+                /*Creamos un objeto que vamos a cargar en el localstorage*/
+                registerUser();
+                alert("Gracias por registrarse. " + `Usuario: ${USER_FORM.value} Password: ${PASSWORD_FORM.value}`);
+                FORM.submit();
+            }else{
+                alert("Las Passwords no coinciden, por favor vuelva a ingresar ambas passwords");
+                PASSWORD_FORM.value = "";
+                RE_PASSWORD_FORM.value = "";
+            }
         }
+        
     }
 });
+
+function verifyUserExistence(){
+        let arrayUsers = JSON.parse(localStorage.getItem("users"));
+        let verifyUser = false;
+        arrayUsers.forEach(user => {
+            if(user.user === USER_FORM.value){
+                verifyUser = true;
+            }
+        });
+        return verifyUser;
+    }
 
 function registerUser(){
     let obj_register = {
