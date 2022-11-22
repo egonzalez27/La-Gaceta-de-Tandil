@@ -1,0 +1,199 @@
+.ocultar {
+    display: none;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.container-form-login, .container-logo-form-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logo-login{
+    max-width: 200px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-login{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    text-align: center;
+    padding: 20px 25px;
+    box-shadow: 0 5px 10px #f39c12;
+}
+
+.title-login {
+    color: #252525;
+    font-size: 35px;
+    font-weight: 750;
+    margin-bottom: 30px;
+}
+
+.icon-form {
+    font-size: 20px;
+    color: #d35400;
+    margin-right: 10px;
+}
+
+.input-form{
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px #f39c12;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+.input-form:focus{
+    transform: scale(1.06);
+    transition: transform 0.3s;
+}
+
+form .link {
+    color: #252525;
+    margin-bottom: 15px;
+}
+
+/*Botón del formulario DESACTIVADO*/
+.btn-off{
+    color: #2c3e50;
+    border: none;
+    background: #95a5a6;
+    padding: 10px 15px;
+    font-size: 15px;
+    width: 100%;/*Dá un ancho que varía con el tamaño del padre*/
+}
+
+.btn-on{
+    color: #2c3e50;
+    border: none;
+    background: #d35400;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 100%;
+}
+
+.btn-on:hover{
+    background-color: #f39c12;
+    cursor:pointer;
+}
+
+/***********************************************************
+                        REGISTER
+************************************************************/
+.container-logo-register{
+    background: url(../images/laGacetaLogoMain.svg) center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    overflow:inherit;
+    width: 100%;
+    height: 300px;
+}
+
+.conteiner-form{
+    min-width: 50%;
+}
+
+form label {
+    display: flex;
+    margin: 15px;
+}
+
+.icon-form {
+    font-size: 20px;
+    color: #f39c12;
+    margin-right: 10px;
+}
+
+form label input {
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px #f39c12;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+form label input::placeholder {
+    color: #d35400;
+}
+
+.checkbox-form{
+    width: 100%;
+    height: 20px;
+}
+
+
+/***********************************************************************
+                            INICIO CAPTCHA
+************************************************************************/
+
+.captcha-validation {
+    display: flex;/*Aplíca flex al contenedor*/
+    justify-content: center;/*Centra el contenido de forma horizontal*/
+}
+/*Inputs del captcha*/
+.captcha {
+    height: 30px;/*Dá un alto fíjo*/
+    min-width: 70px;/*Dá un ancho mínimo fíjo*/
+    max-width: 100px;/*Dá un ancho máximo fíjo*/
+    text-align: center;/*Centra el texto*/
+    font-size: 20px;/*Cambia el tamaño del texto*/
+    font-weight: bold;/*Cambia el tipo de texto a negrita*/
+}
+/*Valor random del captcha*/
+.value-captcha {
+    background-color: #c0392b;/*Cambia el color del fondo*/
+    color: #f39c12;/*Cambia el color del texto*/
+}
+/*Botones del captcha*/
+.btn-actualizar-captcha, .btn-validar-captcha {
+    border: 1px solid transparent;/*Dá un borde*/
+    background: none;/*Quita el fondo*/
+    font-size: 35px;/*Cambia el tamaño del texto*/
+}
+/*Icono que se muestra como botón del captcha*/
+.icon-btn {
+    color: #c0392b;/*Cambia el color del icono*/
+    cursor: pointer;/*Cambia el cursor a una mano cuando se posiciona encima*/
+}
+/*Icono del captcha con hover*/
+.icon-btn:hover {
+    color: #f39c12;/*Cambia el color del icono*/
+}
+/*Texto que se muestra después de validar correctamente o incorrectamente el captcha*/
+.result-validation-captcha {
+    justify-content: center;/*Centra el texto*/
+}
+/*Texto de validación correcto*/
+.validation-correct {
+    color: #008000;/*Cambia el color del texto*/
+}
+/*Texto de validación incorrecto*/
+.validation-incorrect {
+    color: #ff0000;/*Cambia el color del texto*/
+    border: 2px solid red;
+}
+/*Botones del captcha con validación correcta*/
+.btn-captcha-off {
+    color: #95a5a6;/*Cambia el color del icono dle botón*/
+    cursor: auto;/*Cambia el tipo de cursor*/
+}
+
+/***********************************************************************
+                            FIN CAPTCHA
+************************************************************************/

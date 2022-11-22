@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/test.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="left-panel">
+        <a href="./login.html" class="close-session" id="log">Ingresar</a>
+        <button class="close-session ocultar" id="close-session">Salir</button>
+    </div>
+    <div class="container-register">
+        <div class="container-logo-register">
+        </div>
+        <section class="conteiner-form">
+            <form action="" method ="get" class="form" id="form">
+                <div class="form-login">
+                    <h3 class="title-login text-center">Register</h3>
+                    <label class="container-input-form">
+                        <input type="text" name="user" id="user_form" class="input-form" placeholder="Usuario" maxlength="12" required><span>*</span>
+                    </label>
+                    <label>
+                        <input type="password" name="password" id="password_form" class="input-form" placeholder="Password" maxlength="12" required><span>*</span>
+                    </label>
+                    <label>
+                        <input type="password" name="password" id="re_password_form" class="input-form" placeholder="Password" maxlength="12" required><span>*</span>
+                    </label>
+                    <label>
+                        <input type="email" name="email" id="email_form" class="input-form" placeholder="ejemplo@hotmail.com" required><span>*</span>
+                    </label>
+                    <p id="result-captcha" class="text-center"></p>
+                    <div class="captcha-validation">
+                        <button id="actualizar_captcha" class="btn-actualizar-captcha">
+                            <ion-icon name="reload-circle-outline" id="icon-captcha-random" class="icon-btn"></ion-icon>
+                        </button>
+                        <input type="text" id="captcha-random" class="value-captcha captcha" disabled>
+                        <input type="text" id="validation-captcha" class="captcha">
+                        <button id="btn-validation-captcha" class="btn-validar-captcha">
+                            <ion-icon name="checkmark-circle-outline" id="icon-captcha-validation" class="icon-btn"></ion-icon>
+                        </button>
+                    </div>
+                    <div>
+                        <label for="checkbox-terminos-conficiones">Aceptar Términos y Condiciones:</label>
+                        <input type="checkbox" id="checkbox-terminos-condiciones" class="checkbox-form" disabled>
+                    </div>
+                        <input type="submit" value="Confirmar" id="btn_submit" class="btn-off" disabled>
+                </div>
+            </form>
+        </section>
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/register.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
