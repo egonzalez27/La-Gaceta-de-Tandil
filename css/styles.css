@@ -61,7 +61,9 @@ body {
     display: flex;
     flex-direction: row;
     width: 45%;
-    background-color: #e67e2240;
+    /* background-color: #e67e2240; */
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .headLogo {
@@ -70,8 +72,6 @@ body {
 
 .headLogo img {
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
     display: flex;
 }
 
@@ -79,26 +79,35 @@ body {
     display: flex;
     width: 20%;
     background-color: #e67e2280;
+    margin-left: auto;
 }
 
-.headRadioPubli {
+.radioMenu audio {
     display: flex;
-    justify-content: end;
+    margin-top: auto;
+    width: 18vw;
 }
 
 
 
 
 
+
+
+header {
+    width: 100%;
+    height: 4vw;
+    background-color: #c0392b;
+    margin: 10px 0;
+}
 
 .containerMenu {
     display: flex;
-    width: 100%;
-    margin: 10px 0;
+    width: 90%;
+    margin: 10px auto 10px auto;
     font-size: 1.9vw;
     font-weight: normal;
     text-transform: uppercase;
-    background-color: #c0392b;
     font-family: 'Calibri', 'Trebuchet MS';
 }
 
@@ -107,18 +116,21 @@ body {
 }
 
 .menuBTN {
+    display: flex;
     background-color: #d35400;
-    width: 100%;
+    width: 4vw;
+    height: 4vw;
     color: beige;
     border: none;
     cursor: pointer;
     align-items: center;
-    box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+    justify-content: center;
+    box-shadow: 1px -1px 0px rgba(0,0,0,0.1);
 }
 
 .menuBTN img {
-    width: 100%;
-    margin-top: 4%;
+    width: 3vw;
+    height: 3vw;
 }
 
 .menuContent {
@@ -133,7 +145,7 @@ body {
 
 .menuContent a {
     color: #ecf0f1;
-    padding: 12px 16px;
+    padding: 1vw 1vw;
     text-decoration: none;
     display: block;
 }
@@ -145,10 +157,11 @@ body {
     box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
 }
 
-.inicioMenu:hover .menuBTN {
+.inicioMenu:hover .menuBTN:hover {
     background-color: #c0392b;
-    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
-    transform: scale(1.05);
+    transform: scale(1.03);
+    box-shadow: -1px 2px 10px rgba(0,0,0,0.3);
+    transition: all 250ms;
 }
 
 .inicioMenu:hover .menuContent{
@@ -160,6 +173,38 @@ body {
 
 
 
+
+.containerButtonsRegLog {
+    position: relative;
+    margin-left: auto;
+    margin-bottom: auto;
+    
+}
+
+.containerButtonsRegLog a {
+    display: inline-block;
+    width: 7vw;
+    height: 4vw;
+    padding: 1vw;
+    margin-left: 1vw;
+    cursor: pointer;
+    font-size:x-large;
+    color: #ecf0f1;
+    font-size: 1.5vw;
+    text-decoration: none;
+    text-transform:capitalize;
+    text-align: center;
+    font-family: 'Calibri', 'Trebuchet MS';
+    background-color: #d35400;
+    box-shadow: 1px -1px 0px rgba(0,0,0,0.1);
+}
+
+.containerButtonsRegLog a:hover {
+    background-color: #c0392b;
+    transform: scale(1.02);
+    box-shadow: -1px 2px 10px rgba(0,0,0,0.3);
+    transition: all 250ms;
+}
 
 
 
@@ -221,7 +266,6 @@ body {
 
 .containerImageMainNews img {
     width: 100%;
-    align-items: flex-end;
     object-fit:contain;
     transition: 2s;
     height: 100%;
@@ -457,7 +501,7 @@ body {
 .footer {
     
     background-color: #bdc3c7;
-    font-family:  Arial, sans-serif, 'Gill Sans', 'Gill Sans MT';
+    font-family:  Arial, 'Gill Sans', 'Gill Sans MT';
     border-top: 2px solid #2980b9;
   }
 
@@ -516,10 +560,15 @@ body {
     box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
   }
 
+  .redes a:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
+  }
+
   .fa {
-    width: 4vw;
-    height: 4vw;
-    line-height: 4vw;
+    width: 3.8vw;
+    height: 3.8vw;
+    line-height: 3.8vw;
     font-size: 2.5vw;
   }
 
