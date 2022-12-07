@@ -1,0 +1,335 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    scrollbar-width: none;
+    background-color:white;
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+}
+.containerHeadLogo {
+    display: flex;
+    flex-direction: row;
+    width: 45%;
+    /* background-color: #e67e2240; */
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.headLogo {
+    width: 100%;
+}
+
+.headLogo img {
+    width: 100%;
+    display: flex;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 4vw;
+    margin: 10px 0;
+    border-bottom: 0.2vw solid #e67e2250;
+    background-color: #c0392b;
+}
+
+.containerMenu {
+    display: flex;
+    width: 90%;
+    margin: 0px auto 0px auto;
+    font-size: 1.9vw;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-family: 'Calibri', 'Trebuchet MS';
+}
+
+.inicioMenu {
+    position: relative;
+}
+
+.menuBTN {
+    display: flex;
+    background-color: #d35400;
+    width: 4vw;
+    height: 4vw;
+    color: beige;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px -1px 0px rgba(0,0,0,0.1);
+}
+
+.menuBTN img {
+    width: 3vw;
+    height: 3vw;
+}
+
+.menuContent {
+    width: 35vw;
+    display: none;
+    position: absolute;
+    margin-right: auto;
+    background-color: #d35400;
+    max-width: 400px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+}
+
+.menuContent a {
+    color: #ecf0f1;
+    padding: 1vw 1vw;
+    text-decoration: none;
+    display: block;
+}
+
+
+
+.menuContent a:hover {
+    background-color: #c0392b;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
+}
+
+.inicioMenu:hover .menuBTN:hover {
+    background-color: #c0392b;
+    transform: scale(1.03);
+    box-shadow: -1px 2px 10px rgba(0,0,0,0.3);
+    transition: all 250ms;
+}
+
+.inicioMenu:hover .menuContent{
+    display: block;
+}
+
+
+
+
+
+
+
+.containerButtonsRegLog {
+    position: relative;
+    margin-left: auto;
+    margin-bottom: auto;
+    
+}
+
+.containerButtonsRegLog a {
+    display: inline-block;
+    width: 7vw;
+    height: 4vw;
+    padding: 1vw;
+    margin-left: 1vw;
+    cursor: pointer;
+    font-size:x-large;
+    color: #ecf0f1;
+    font-size: 1.5vw;
+    text-decoration: none;
+    text-transform:capitalize;
+    text-align: center;
+    font-family: 'Calibri', 'Trebuchet MS';
+    background-color: #d35400;
+    box-shadow: 1px -1px 0px rgba(0,0,0,0.1);
+}
+
+.containerButtonsRegLog a:hover {
+    background-color: #c0392b;
+    transform: scale(1.02);
+    box-shadow: -1px 2px 10px rgba(0,0,0,0.3);
+    transition: all 250ms;
+}
+
+
+.policiales{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.conteinerP{
+    width: 750px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.poli{
+    margin-right: 2px;
+    margin-left: 2px;
+}
+.fontPoli{
+    font-size: 34px;
+    line-height: 40px;
+}
+.linePoli{
+    margin-bottom: 14px;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    border-top-width: 2px;
+    border-top-style: solid;
+    border-top-color: #d35400;
+}
+.tituloP{
+    display: flex;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#carouselExampleControls{
+    display: flex;
+    padding-left: 450px;
+}
+.carousel-control-prev .carousel-control-prev-icon{
+    background-color: #d35400;
+}
+.carousel-control-next .carousel-control-next-icon{
+    background-color: #d35400;
+}
+
+.containerPublicitySecundaryNews {
+    display: flex;
+    width: 100%;
+    position: relative;
+    flex-direction: row;
+}
+
+.publicitySecundaryNews {
+    display: flex;
+    width: 100%;
+    
+}
+
+.publicitySecundaryNews img {
+    display: flex;
+    width: 50%;
+    margin: 50px 120px;
+}
+
+
+.containerBarPublicity {
+    display: block;
+    width: 100%;
+}
+
+.barPublicity {
+    display: flex;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.barPublicity img{
+    width: 100%;
+}
+
+.containerFooter {
+    background-color: #bdc3c7;
+    font-family:  Arial, 'Gill Sans', 'Gill Sans MT';
+    border-top: 2px solid #2980b9;
+  }
+
+  .containerFooterFirst {
+    width: 90%;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .containerTop {
+    padding: 5px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+
+  .boxFooter {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .boxFooter img {
+    display: flex;
+    width: 100%;
+  }
+
+  .boxFooter h3 {
+    font-size: 2.1vw;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    color: #2c3e50;
+  }
+
+  .boxFooter p {
+    font-size: 2vw;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 6%;
+    margin-bottom: 5%;
+  }
+
+  .containerRedes {
+    display: block;
+  }
+
+  .containerRedes a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ecf0f1;
+    background-color: #2c3e50;
+    text-align: center;
+    transition: all 250ms ease;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .containerRedes a:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
+  }
+
+  .fa {
+    width: 3.8vw;
+    height: 3.8vw;
+    line-height: 3.8vw;
+    font-size: 2.5vw;
+  }
+
+  .facebook:hover{
+    background: blue;
+  }
+
+ .instagram:hover{
+    background: linear-gradient(to bottom, rgb(183, 4, 219), rgb(255, 0, 200), rgb(255, 230, 1));
+  }
+  .youtube:hover{
+    background: red;
+  }
+  .twitter:hover{
+    background: rgb(0, 191, 255);
+  }
+
+
+
+  .containerFooter .containerBottom {
+    background-color: #2c3e50;
+    padding: 1.5% 10px;
+    text-align: center;
+    color: #2980b9;
+  }
+  .containerFooter .containerBottom small {
+    font-size: 2vw;
+  }
+
+.ocultar{
+    display: none;
+}

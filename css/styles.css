@@ -264,6 +264,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    box-shadow: 0px 0px 20px 20px rgba(52,73,94,0.3);
 }
 
 .containerImageMainNews {
@@ -394,6 +395,7 @@ header {
     padding: 7px 7px 0 7px;
     width:35%;
     border: 1px solid #e67e22;
+    box-shadow: 20px 20px 20px #d35400;
 }
 
 .containerImageSecundaryNews {
@@ -469,6 +471,10 @@ header {
     margin-left: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border: 1px solid #e67e22;
+    box-shadow:-15px -15px 15px rgba(255, 255, 255,0.2),
+    15px 15px 15px rgba(0,0,0,0.1),
+    inset -5px -5px 5px rgba(255, 255, 255,0.2),
+    inset 5px 5px 5px rgba(0,0,0,0.1);
 }
 
 .containerOtherNewsTitle {
@@ -622,18 +628,8 @@ header {
     font-size: 2vw;
   }
 
-
-
-
-/********************************************************************************
-                    INICIO TEST LOGIN Y REGISTER
-********************************************************************************/
-
 .ocultar{
     display: none;
 }
 
 
-/********************************************************************************
-                     FIN TEST LOGIN Y REGISTER
-********************************************************************************/
