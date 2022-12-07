@@ -8,7 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/test.css">
-    {{!-- <link rel="stylesheet" href="/css/pageNews.css"> --}}
+    <link rel="stylesheet" href="/css/pageNews.css">
+    <link rel="stylesheet" href="/css/pageSeccion.css">
     <title>La Gaceta de Tandil</title>
     <link rel="icon" href="/images/icons/logo.ico">
 </head>
@@ -35,23 +36,24 @@
         </div>
         </a>
         <div class="containerRadioPubli">
-            <div class="radioMenu">
-                <audio controls="controls" class="radioItem">
-                    <source src="https://streamconex.com:2000/stream/chepapa" type="audio/mp3" />
-                </audio>
-                <!-- <div class="titleRadioAm89.1">
-                    <img src="/images/publicity/radioPublicity.jpg" alt="Radio Am 89.1">
-                </div> -->
+            <div class="publicityRadio">
+                <img src="/images/publicity/radioPublicity.jpg" alt="Radio Am 89.1">
             </div>
-
         </div>
+    </div>
+
+    <div class="radioMenu">
+        <audio controls="controls" class="radioItem">
+            <source src="https://streamconex.com:2000/stream/chepapa" type="audio/mp3" />
+        </audio>
+    </div>
     </div>
     
         {{> navigation}}
 
         
         {{> messages }}
-
+        
         {{> errors}}
 
         {{{ body }}}

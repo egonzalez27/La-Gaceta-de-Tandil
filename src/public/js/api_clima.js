@@ -1,11 +1,21 @@
 const clima_view = document.getElementById('clima');
 
-async function mostrarClima(){
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=Tandil,ar&APPID=ef8153f381d4c88bebc3c2830e52b3e3')
-        .then(resolve => resolve.json())
-        .then(jsonFinal => clima_view.innerHTML = `<h4>La temperatura en ${jsonFinal.name} es de ${parseInt(jsonFinal.main.temp-273)}° y la Humedad es de ${jsonFinal.main.humidity}%</h4>`)
-        .catch(err => console.log(err));
+const apiKey = 'ef8153f381d4c88bebc3c2830e52b3e3'
+const api = 'https://api.openweathermap.org/data/2.5/weather?q=Tandil,ar'
+
+
+ async function mostrarClima(){
+   const climaApi = fetch(`${api}&APPID=${apiKey}`)
+
+      .then(resolve => resolve.json())
+      .then(climaApi => clima_view.innerHTML = `<h4>${climaApi.name}<br>Temp actual ${Math.round(climaApi.main.temp-273)}° </h4>`)
+      .catch(err => console.log(err));
+      
+   
+
+    
+     console.log(climaApi);
     
 }
 
-document.addEventListener('DOMContentLoaded', mostrarClima);
+ document.addEventListener('DOMContentLoaded', mostrarClima);

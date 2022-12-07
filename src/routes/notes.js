@@ -47,6 +47,10 @@ router.get('/pages/pageNews.html', isAuthenticated, async (req, res) => {
     res.render('notes/noticia');
 })
 
+router.get('/pages/sections.hbs', isAuthenticated, async (req, res) => {
+    res.render('notes/sections');
+})
+
 router.put('/notes/edit-notes/:id', isAuthenticated, async (req, res) => {
     const { title, subtitle, description } = req.body;
     await Notes.findByIdAndUpdate(req.params.id, { title, subtitle, description }).lean();

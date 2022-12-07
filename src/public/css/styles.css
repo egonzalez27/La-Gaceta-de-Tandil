@@ -41,6 +41,7 @@ body {
     width: 90%;
     margin-right: auto;
     margin-left: auto;
+    background-color: #e67e2250;
 }
 
 
@@ -78,15 +79,31 @@ body {
 .containerRadioPubli {
     display: flex;
     width: 20%;
-    background-color: #e67e2280;
+}
+
+.publicityRadio {
+    display: flex;
+    width: 100%;
+}
+
+.publicityRadio img {
+    display: flex;
+    width: 100%;
+}
+
+.radioMenu {
+    display: flex;
+    width: 100%;
+    margin-right: auto;
     margin-left: auto;
+    background-color: #e67e2250;
 }
 
 .radioMenu audio {
     display: flex;
-    margin-top: auto;
-    width: 18vw;
+    width: 20vw;
 }
+
 
 
 
@@ -176,12 +193,28 @@ header {
 
 
 
+.containerClima {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.containerClima h4 {
+    background-color: #d35400;
+    color: #ecf0f1;
+    width: 15vw;
+    height: 4vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+
 
 
 
 .containerButtonsRegLog {
     position: relative;
-    margin-left: auto;
     margin-bottom: auto;
     
 }
@@ -191,7 +224,6 @@ header {
     width: 9vw;
     height: 4vw;
     padding: 1vw;
-    margin-left: 1vw;
     cursor: pointer;
     font-size:small;
     color: #ecf0f1;
@@ -209,6 +241,11 @@ header {
     transform: scale(1.02);
     box-shadow: -1px 2px 10px rgba(0,0,0,0.3);
     transition: all 250ms;
+}
+
+.ulButtonsRegLog {
+    padding-left: 0;
+    margin-left: 0;
 }
 
 
@@ -281,7 +318,7 @@ header {
 
 .containerTextMainNews {
     display: flex;
-    width: 50%;
+    width: 100%;
     padding: 1%;
     flex-direction: column;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -293,7 +330,7 @@ header {
 
 .titleMainNews {
     width: 100%;
-    margin-bottom: 4%;
+    margin: 3% 0;
     text-align: center;
     font-weight: 400;
     font-size: 3vw;
@@ -302,9 +339,9 @@ header {
 
 
 .textMainNews {  
-    width: 100%;
+    width: 80%;
     padding: 0 0.5vw;
-    margin-top: 4%;
+    margin: 0 auto 3% auto;
     font-weight: 300;
     font-size: 1.5vw;
     text-align: center;
@@ -374,9 +411,7 @@ header {
     display: flex;
     width: 90%;
     flex-direction: row;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 10px;
+    margin: 0 auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -391,7 +426,7 @@ header {
     margin: 0px 2px 0px 2px;
     background: #ecf0f1;
     padding: 7px 7px 0 7px;
-    width:35%;
+    width:100%;
     border: 1px solid #e67e22;
 }
 
@@ -442,7 +477,6 @@ header {
 .publicitySecundaryNews {
     display: flex;
     width: 100%;
-    
 }
 
 .publicitySecundaryNews img {
@@ -472,6 +506,7 @@ header {
 
 .containerOtherNewsTitle {
     width: 100%;
+    margin: 2% 0;
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;

@@ -1,44 +1,48 @@
 <header>
-    <div class="containerMenu">
-                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Action
-                </button>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="/">Home</a>
-                    <a class="dropdown-item" href="#">Nacionales e Internacionales</a>
-                    <a class="dropdown-item" href="#">Cultura</a>
-                    <a class="dropdown-item" href="#">Deportes</a>
-                    <a class="dropdown-item" href="#">Políciales</a>
-                    <a class="dropdown-item" href="#">Necrologicas</a>
-                    <a class="dropdown-item" href="#">Tandilenses por el mundo</a>
-                    <a class="dropdown-item" href="/about">Abaout Us</a>
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Separated link</a>
-                </div>
-                <div id="clima"></div>
-        <div class="containerButtonsRegLog">
-                    <ul class="dropdown">
-                        <a class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        {{#if userLog}}
-                                <li class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                    <a class="dropdown-item" href="/notes">Notas</a>
-                                    <a class="dropdown-item" href="/notes/add">Nueva Nota</a>
-                                    <a class="dropdown-item" href="/users/logout">Logout</a>
-                                </li>
-                        {{else}}
-                            <li class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                                <a href="/users/signin" class="nav-link">Sign-In</a>
-                                <a href="/users/signup" class="nav-link">Sign-Up</a>
-                            </li>
-                        {{/if}}
-                    </ul>
-        </div>
+  <div class="containerMenu">
+    <div class="inicioMenu">
+      <button class="menuBTN"><img src="/images/icons/iconMenu.svg" /></button>
+      <div class="menuContent">
+        <nav>
+          <a class="menu-item" href="/">Home</a>
+          <a href="/pages/sections.hbs" class="newGetIn" id="log">Locales</a>
+          <a href="/pages/sections.hbs" class="newGetIn" id="log">Regionales</a>
+          <a href="/pages/sections.hbs" class="newGetIn" id="log">Nacionales e Internacionales</a>
+          <a href="/pages/sections.hbs" class="newGetIn" id="log">Cultura</a>
+          <a href="/pages/sections.hbs" class="newGetIn" id="log">Deportes</a>
+          <a href="/pages/sections.hbs" class="newGetIn" id="log">Políciales</a>
+          <a href="/pages/sections.hbs" class="newGetIn" id="log">Necrologicas</a>
+          <a href="/pages/sections.hbs" class="newGetIn" id="log">Tandilenses por el mundo</a>
+          <a class="menu-item" href="/about">About Us</a>
+        </nav>
+      </div>
     </div>
+    
+    <div class="containerClima" id="clima"></div>
+    
+    <div class="containerButtonsRegLog">
+      <ul class="ulButtonsRegLog">
+        <a class="btn containerButtonsRegLog"
+          type="button"
+          id="dropdownMenu2"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false">
+          Perfil
+        </a>{{#if userLog}}<li class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <a class="dropdown-item" href="/notes">Notas</a>
+            <a class="dropdown-item" href="/notes/add">Nueva Nota</a>
+            <a class="dropdown-item" href="/users/logout">Logout</a>
+          </li>
+        {{else}}
+          <li class="dropdown-menu" aria-labelledby="dropdownMenu2">
+            <a href="/users/signin" class="nav-link">Sign-In</a>
+            <a href="/users/signup" class="nav-link">Sign-Up</a>
+          </li>
+        {{/if}}
+      </ul>
+    </div>
+  </div>
 </header>
 
 <script src="/js/api_clima.js"></script>
